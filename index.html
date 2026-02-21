@@ -3,51 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Commentaries</title>
+    <title>My Daily Commentaries</title>
     <style>
-        body { 
-            font-family: 'Georgia', serif; 
-            max-width: 700px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            line-height: 1.6; 
-            color: #333;
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #333;
-            margin-bottom: 30px;
-            padding-bottom: 10px;
-        }
-        article { 
-            margin-bottom: 40px; 
-        }
-        h2 { 
-            margin-bottom: 5px; 
-        }
-        .date { 
-            color: #777; 
-            font-size: 0.9em; 
-            font-style: italic;
-            margin-top: 0;
-        }
+        body { font-family: 'Georgia', serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; line-height: 1.6; }
+        header { text-align: center; margin-bottom: 40px; }
+        .intro { font-size: 1.1em; color: #555; }
+        
+        .social-nav { display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; }
+        .social-nav a { text-align: center; text-decoration: none; color: #333; transition: transform 0.2s; display: block;}
+        .social-nav a:hover { transform: scale(1.1); }
+        .social-logo { width: 60px; height: auto; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;}
+        
+        .drafting-station { background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #ddd; }
+        textarea { width: 100%; height: 150px; padding: 10px; margin-top: 10px; font-family: inherit; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .note { font-size: 0.85em; color: #666; font-style: italic; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Daily Commentaries</h1>
-        <p>Thoughts on news, reading, and the world.</p>
+        <h1>Daily Commentaries Dashboard</h1>
+        <p class="intro">Welcome to my personal hub. This page serves as a drafting station and directory for my daily commentaries on news, reading, and miscellaneous topics before they are published to my various social networks.</p>
     </header>
 
-    <main>
-        <article>
-            <h2>Reflections on Freire and Modern Pedagogy</h2>
-            <p class="date">February 21, 2026</p>
-            <p>Reading the news today regarding recent curriculum updates made me reflect heavily on Paulo Freire's educational philosophy. The "banking concept" of education still seems far too prevalent in how institutions measure success...</p>
-        </article>
+    <section class="social-nav">
+        <a href="facebook.html">
+            <img src="Facebook_Logo_Primary.png" alt="Facebook" class="social-logo">
+            <strong>Facebook</strong>
+        </a>
+        <a href="instagram.html">
+            <img src="Instagram_Glyph_Gradient.png" alt="Instagram" class="social-logo">
+            <strong>Instagram</strong>
+        </a>
+        <a href="linkedin.html">
+            <img src="LinkedIn-Logo.png" alt="LinkedIn" class="social-logo">
+            <strong>LinkedIn</strong>
+        </a>
+    </section>
 
-    </main>
+    <section class="drafting-station">
+        <h2>Drafting Box</h2>
+        <p class="note">Use this space to write your daily commentary. Because this is a static site, you will need to copy your finished text and paste it into the respective HTML file (e.g., facebook.html) to permanently save it to the site.</p>
+        <textarea placeholder="Write today's commentary here..."></textarea>
+    </section>
 
 </body>
 </html>
